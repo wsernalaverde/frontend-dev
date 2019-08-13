@@ -23,7 +23,7 @@ function Navbar() {
 										<Link to="/" className="nav-link">Hola {payload().user.email}!!!</Link>
 									</li>
 									<li className="nav-item">
-										<Link to="/create" className="nav-link" >Crea un post</Link>
+										<Link to="/profile" className="nav-link" >Mi perfil</Link>
 									</li>
 									<li className="nav-item">
 										<Link to="/logout" className="nav-link" >Logout</Link>
@@ -41,8 +41,6 @@ function Navbar() {
 								)
 
 						}
-
-
 					</ul>
 				</div>
 			</div>
