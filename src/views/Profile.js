@@ -38,7 +38,7 @@ function Profile () {
 
   const getData = !loading ? data.me : {}
 
-  const { inputs, handleSubmit, handleImputChange } = useForm(sendUpdate, getData)
+  const { inputs, handleSubmit, handleInputChange } = useForm(sendUpdate, getData)
 
   return loading ? (<h4 className="mt-5">Cargando ...</h4>) : (
     <div className="container mt-5">
@@ -54,7 +54,7 @@ function Profile () {
               name="name"
               id="name"
               value={inputs.name}
-              onChange={handleImputChange}
+              onChange={handleInputChange}
             />
           </div>
           <div className="col-10">
@@ -64,7 +64,7 @@ function Profile () {
               name="email"
               id="email"
               value={inputs.email}
-              onChange={handleImputChange}
+              onChange={handleInputChange}
             />
           </div>
           <div className="col-10">
@@ -74,7 +74,7 @@ function Profile () {
               name="phone"
               id="phone"
               value={inputs.phone}
-              onChange={handleImputChange}
+              onChange={handleInputChange}
             />
           </div>
           <div className="col-10">

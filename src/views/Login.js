@@ -3,6 +3,7 @@ import gql from 'graphql-tag'
 import { useMutation } from 'react-apollo-hooks'
 import NavBar from '../components/Navbar'
 import Input from '../components/Input'
+import { Link } from 'react-router-dom';
 
 const LOGIN = gql`
 mutation LogUser($email:String!,$password:String!){
@@ -33,8 +34,9 @@ function Login({history}) {// history es una prop que react router DOM le pasa a
         <>
         <NavBar />
         <div className="container my-5 py-5 text-center">
-            <h4>Login</h4>
-            <form action="" onSubmit={handleSubmit}>
+            <h4>Bienvenido</h4>
+            <p>Inicia sesión con tu dirección de correo electrónico y contraseña.</p>
+            <form className="form-login text-left my-5" action="" onSubmit={handleSubmit}>
                 <div className="row justify-content-center">
                     <div className="form-group col-10">
                         <Input
@@ -49,7 +51,7 @@ function Login({history}) {// history es una prop que react router DOM le pasa a
 
                     <div className="form-group col-10">
                         <Input
-                            label="Password: "
+                            label="Contraseña: "
                             name="password"
                             id="password"
                             type="password"
@@ -58,10 +60,11 @@ function Login({history}) {// history es una prop que react router DOM le pasa a
                         />
                     </div>
                     <div className="col-10">
-                        <button type="submit" className="btn bg-dark text-light">Login</button>
+                        <button type="submit" className="btn btn-color-custom btn-block text-light">Iniciar sesión</button>
                     </div>
                 </div>
             </form>
+            <p className="align-items my-5">¿Eres nuevo? <Link to="/signup" className="nav-link link-color-custom" >Crea una cuenta</Link></p>
         </div>
         </>
     )

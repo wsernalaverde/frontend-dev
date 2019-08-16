@@ -15,7 +15,7 @@ function useForm (callback, data = {}) {
     callback(inputs)
   }
 
-  const handleImputChange = event => {
+  const handleInputChange = event => {
     // Detectar los cambios en los fields
     event.persist()
 
@@ -26,7 +26,7 @@ function useForm (callback, data = {}) {
   return {
     inputs,
     handleSubmit,
-    handleImputChange
+    handleInputChange
   }
 }
 

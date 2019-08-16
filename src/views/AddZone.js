@@ -1,16 +1,16 @@
 import React, { useState } from 'react'
 import Navbar from '../components/Navbar'
-import Input from '../components/Navbar'
+import Input from '../components/Input'
 import MapEditor from '../components/MapEditor'
 import useForm from '../hooks/useForm'
 import gql from 'graphql-tag'
 import { useMutation } from 'react-apollo-hooks'
 
 const ADDZONE = gql`
-  mutation CREATEZONE($data:createZone) {
-    createOneZone(data:$data) {
+  mutation CREATEZONE($data:createZone){
+    createOneZone(data:$data){
       _id,
-      zone
+      zone,
     }
   }
 `

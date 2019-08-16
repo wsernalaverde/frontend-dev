@@ -1,5 +1,9 @@
 @import '~bootstrap/scss/bootstrap.scss';
 
+body{
+  font-family: 'Nunito', sans-serif;
+}
+
 .leaflet-container{
   height: 25rem;
   width: 100%;
@@ -7,4 +11,33 @@
 
 .sr-only {
   display: none;
+}
+
+.btn-color-custom {
+  background: #1BFBE3;
+}
+
+.link-color-custom {
+  color: #1BFBE3;
+}
+
+.align-items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav-link {
+  color: #1bfbe3;
+}
+
+.form-login {
+  max-width: 710px;
+  margin: 0 auto;
+  input {
+    width: 100%;
+  }
+  img {
+    max-width: 100%;
+  }
 }

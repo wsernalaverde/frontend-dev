@@ -22,7 +22,7 @@ export default class createZone extends Component {
 
   _onCreated = e => {
     const layer = e.layer
-    this.setState({editable:e.TileLayer.toGeoJSON()})
+    // this.setState({editable:e.TileLayer.toGeoJSON()})
     this.props.setZone(layer.toGeoJSON().geometry)
   }
 
