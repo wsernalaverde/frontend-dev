@@ -4,9 +4,9 @@ function useForm (callback, data = {}) {
 
   const [inputs, setInputs] = useState(data)
 
-  useEffect(() => {
-    setInputs({...data})
-  },[data])
+  // useEffect(() => {
+  //   setInputs({...data})
+  // },[data])
 
   const handleSubmit = event => {
     // va a cachar el evento submit del formulario
