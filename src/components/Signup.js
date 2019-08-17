@@ -27,6 +27,7 @@ class Signup extends React.Component {
   }
 
   render() {
+    const { history } = this.props
     return (
 
       <div>
@@ -76,7 +77,10 @@ class Signup extends React.Component {
                               email: values.email,
                               password: values.password
                             }
-                          }), () => createUser());
+                          }), async () => {
+                            await createUser()
+                            history.push('/login')
+                          });
                         }, 400);
                         setSubmitting(false);
                       }}
