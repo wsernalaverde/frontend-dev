@@ -12,7 +12,7 @@
     "formik": "^1.5.8",
     "graphql": "^14.4.2",
     "graphql-tag": "^2.10.1",
-    "jquery": "^3.4.1",
+    "jquery": "^3.5.0",
     "leaflet": "^1.5.1",
     "leaflet-draw": "^1.0.4",
     "node-sass": "^4.12.0",
